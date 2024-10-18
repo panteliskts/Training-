@@ -25,6 +25,6 @@ copy(dstString,srcString );
 
 printf("%s\n",dstString );
 
-
+printf("HELL YES");
  
 }
