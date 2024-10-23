@@ -27,27 +27,27 @@ std::cin>>premium_channels; //0.27
   
   
   if (client_code == "R" || client_code =="r"){ 
-    final_bill_for_clients= (7.5 * premium_channels) + bill_for_clients + basic_service_for_clients;
+    final_bill_for_clients= (price_for_premium_channels * premium_channels) + bill_for_clients + basic_service_for_clients;
   std::cout<< " Final bill is" << final_bill_for_clients;
-    std::cout<< " \n"  
+    std::cout<< " \n"  ;
   }
    else if(client_code =="B" || client_code == "b"){
 
-    final_bill_for_business= (7.5 * premium_channels_for_businesses) + bill_for_business + basic_service_fee_for_businesses;
+    final_bill_for_business= (premium_channels_for_businesses * premium_channels_for_businesses) + bill_for_business + basic_service_fee_for_businesses;
 
     std::cout<< " Final bill is" << final_bill_for_business; 
-    std::cout<< " \n"  
+    std::cout<< " \n"  ;
     
     
   } else if(client_code == "B" || client_code == "r", premium_channels_for_businesses > 10){
 
 unsigned connections;
-std::cout <<"Enter number of connections : ";
+std::cout <<"Enter number of connections above 10 : ";
 std::cin>>connections;
 connections = connections * 5;
 
- final_bill_for_business= (7.5 * premium_channels_for_businesses) + bill_for_business + basic_service_fee_for_businesses + connections;
- std::cout<< " \n"  
+ final_bill_for_business= (price_for_premium_channels_for_businesses * premium_channels_for_businesses) + bill_for_business + basic_service_fee_for_businesses + connections;
+ std::cout<< " \n"  ;
   }
     
   
